@@ -1,0 +1,28 @@
+
+extends layout
+
+block content
+  h2 Add New Employee
+  form(action="/create", method="POST")
+    label ID:
+    input(type="number", name="E_id", required)
+    br
+    label Name:
+    input(type="text", name="E_name", required)
+    br
+    label Email:
+    input(type="text", name="E_email", required)
+    br
+    label Number:
+    input(type="number", name="E_number", required)
+    br
+    label Gender:
+    input(type="text", name="E_gender", required)
+    br
+    label Dept:
+    input(type="text", name="E_dept", required)
+    br
+    label Location:
+    input(type="text", name="E_location", required)
+    br
+    button(type="submit") Add
